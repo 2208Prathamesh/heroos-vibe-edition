@@ -10,7 +10,7 @@ Follow these exact steps to deploy your HeroOS application for free.
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/hero-os.git
+   git remote add origin https://github.com/2208prathamesh/heroos-vibe-edition.git
    git push -u origin main
    ```
 

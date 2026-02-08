@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: heroos-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generate: true
+      - key: FRONTEND_URL
+        sync: false
