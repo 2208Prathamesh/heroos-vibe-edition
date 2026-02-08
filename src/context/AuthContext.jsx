@@ -8,18 +8,21 @@ export const AuthProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // Initialize: Check if token exists
+    // Initialize: Check if token and user exist
     useEffect(() => {
         const initAuth = async () => {
             try {
                 const token = apiService.getToken();
-                if (token) {
-                    // Token exists, but we need to validate it
-                    // For now, we'll just mark as not loading
-                    // The user data will be set on login
+                const storedUser = localStorage.getItem('heroos_user');
+                const sessionActive = localStorage.getItem('heroos_session');
+
+                if (token && storedUser && sessionActive) {
+                    setUser(JSON.parse(storedUser));
                 }
             } catch (err) {
                 console.error("Auth Init Error:", err);
+                localStorage.removeItem('heroos_user');
+                localStorage.removeItem('heroos_session');
             } finally {
                 setLoading(false);
             }
@@ -48,7 +51,13 @@ export const AuthProvider = ({ children }) => {
         try {
             setLoading(true);
             const userData = await apiService.login(username, password);
+
+            // Persist user and session
             setUser(userData);
+            localStorage.setItem('heroos_user', JSON.stringify(userData));
+            localStorage.setItem('heroos_session', 'true');
+            localStorage.setItem('heroos_has_booted', 'true'); // Ensure boot flag is set
+
             setLoading(false);
             return true;
         } catch (err) {
@@ -60,6 +69,8 @@ export const AuthProvider = ({ children }) => {
 
     const logout = () => {
         setUser(null);
+        localStorage.removeItem('heroos_user');
+        localStorage.removeItem('heroos_session');
         apiService.logout();
     };
 
@@ -70,7 +81,11 @@ export const AuthProvider = ({ children }) => {
         try {
             const result = await apiService.updateUser(user.id, updates);
             if (result.success) {
-                setUser(prev => ({ ...prev, ...result.user }));
+                setUser(prev => {
+                    const newUser = { ...prev, ...result.user };
+                    localStorage.setItem('heroos_user', JSON.stringify(newUser));
+                    return newUser;
+                });
                 if (user.role === 'admin') {
                     setUsers(prev => prev.map(u => u.id === user.id ? result.user : u));
                 }
