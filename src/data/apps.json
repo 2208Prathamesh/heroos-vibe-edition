@@ -1,0 +1,294 @@
+{
+    "desktopApps": [],
+    "pinnedApps": [
+        {
+            "id": "file-explorer",
+            "name": "Files",
+            "icon": "Folder",
+            "color": "#FDB900",
+            "category": "System"
+        },
+        {
+            "id": "browser",
+            "name": "Browser",
+            "icon": "Chrome",
+            "color": "#4285F4",
+            "category": "Internet"
+        },
+        {
+            "id": "settings",
+            "name": "Settings",
+            "icon": "Settings",
+            "color": "#0078D4",
+            "category": "System"
+        },
+        {
+            "id": "notepad",
+            "name": "Notepad",
+            "icon": "FileText",
+            "color": "#0078D4",
+            "category": "Productivity"
+        },
+        {
+            "id": "paint",
+            "name": "Paint",
+            "icon": "ImageIcon",
+            "color": "#E74856",
+            "category": "Media"
+        },
+        {
+            "id": "messages",
+            "name": "Messages",
+            "icon": "MessageSquare",
+            "color": "#00A4EF",
+            "category": "Communication"
+        },
+        {
+            "id": "calendar",
+            "name": "Calendar",
+            "icon": "Calendar",
+            "color": "#FFB900",
+            "category": "Productivity"
+        },
+        {
+            "id": "heroos-support",
+            "name": "HeroOS Support",
+            "icon": "HelpCircle",
+            "color": "#7C3AED",
+            "category": "System"
+        },
+        {
+            "id": "recycle-bin",
+            "name": "Recycle Bin",
+            "icon": "Trash2",
+            "color": "#6C757D",
+            "category": "System"
+        },
+        {
+            "id": "calculator",
+            "name": "Calculator",
+            "icon": "Calculator",
+            "color": "#00B7C3",
+            "category": "Utilities"
+        },
+        {
+            "id": "terminal",
+            "name": "Terminal",
+            "icon": "Terminal",
+            "color": "#0C7D9D",
+            "category": "Developer"
+        },
+        {
+            "id": "word",
+            "name": "Word",
+            "icon": "FileText",
+            "color": "#2B579A",
+            "category": "Office"
+        },
+        {
+            "id": "excel",
+            "name": "Excel",
+            "icon": "FileText",
+            "color": "#217346",
+            "category": "Office"
+        },
+        {
+            "id": "powerpoint",
+            "name": "PowerPoint",
+            "icon": "FileText",
+            "color": "#D24726",
+            "category": "Office"
+        }
+    ],
+    "taskbarApps": [
+        {
+            "id": "file-explorer",
+            "name": "Files",
+            "icon": "Folder"
+        },
+        {
+            "id": "settings",
+            "name": "Settings",
+            "icon": "Settings"
+        },
+        {
+            "id": "terminal",
+            "name": "Terminal",
+            "icon": "Terminal"
+        },
+        {
+            "id": "notepad",
+            "name": "Notepad",
+            "icon": "FileText"
+        },
+        {
+            "id": "paint",
+            "name": "Paint",
+            "icon": "ImageIcon"
+        }
+    ],
+    "allApps": [
+        {
+            "id": "notepad",
+            "name": "Notepad",
+            "icon": "FileText",
+            "category": "Productivity"
+        },
+        {
+            "id": "paint",
+            "name": "Paint",
+            "icon": "ImageIcon",
+            "category": "Media"
+        },
+        {
+            "id": "accessibility",
+            "name": "Accessibility",
+            "icon": "Accessibility",
+            "category": "System"
+        },
+        {
+            "id": "calculator",
+            "name": "Calculator",
+            "icon": "Calculator",
+            "category": "Utilities"
+        },
+        {
+            "id": "calendar",
+            "name": "Calendar",
+            "icon": "Calendar",
+            "category": "Productivity"
+        },
+        {
+            "id": "camera",
+            "name": "Camera",
+            "icon": "Camera",
+            "category": "Media"
+        },
+        {
+            "id": "clock",
+            "name": "Clock",
+            "icon": "Clock",
+            "category": "Utilities"
+        },
+        {
+            "id": "code-editor",
+            "name": "Code Editor",
+            "icon": "Code",
+            "category": "Developer"
+        },
+        {
+            "id": "documents",
+            "name": "Documents",
+            "icon": "FileText",
+            "category": "Productivity"
+        },
+        {
+            "id": "downloads",
+            "name": "Downloads",
+            "icon": "Download",
+            "category": "System"
+        },
+        {
+            "id": "file-explorer",
+            "name": "File Explorer",
+            "icon": "Folder",
+            "category": "System"
+        },
+        {
+            "id": "mail",
+            "name": "Mail",
+            "icon": "Mail",
+            "category": "Communication"
+        },
+        {
+            "id": "maps",
+            "name": "Maps",
+            "icon": "Map",
+            "category": "Utilities"
+        },
+        {
+            "id": "messages",
+            "name": "Messages",
+            "icon": "MessageSquare",
+            "category": "Communication"
+        },
+        {
+            "id": "music",
+            "name": "Music",
+            "icon": "Music",
+            "category": "Media"
+        },
+        {
+            "id": "notes",
+            "name": "Notes",
+            "icon": "StickyNote",
+            "category": "Productivity"
+        },
+        {
+            "id": "photos",
+            "name": "Photos",
+            "icon": "Image",
+            "category": "Media"
+        },
+        {
+            "id": "settings",
+            "name": "Settings",
+            "icon": "Settings",
+            "category": "System"
+        },
+        {
+            "id": "store",
+            "name": "Store",
+            "icon": "ShoppingBag",
+            "category": "System"
+        },
+        {
+            "id": "terminal",
+            "name": "Terminal",
+            "icon": "Terminal",
+            "category": "Developer"
+        },
+        {
+            "id": "videos",
+            "name": "Videos",
+            "icon": "Video",
+            "category": "Media"
+        },
+        {
+            "id": "browser",
+            "name": "Browser",
+            "icon": "Chrome",
+            "category": "Internet"
+        },
+        {
+            "id": "recycle-bin",
+            "name": "Recycle Bin",
+            "icon": "Trash2",
+            "category": "System"
+        },
+        {
+            "id": "heroos-support",
+            "name": "HeroOS Support",
+            "icon": "HelpCircle",
+            "category": "System"
+        },
+        {
+            "id": "word",
+            "name": "Word",
+            "icon": "FileText",
+            "category": "Office"
+        },
+        {
+            "id": "excel",
+            "name": "Excel",
+            "icon": "FileText",
+            "category": "Office"
+        },
+        {
+            "id": "powerpoint",
+            "name": "PowerPoint",
+            "icon": "FileText",
+            "category": "Office"
+        }
+    ]
+}
