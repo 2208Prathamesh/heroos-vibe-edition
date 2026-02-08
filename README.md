@@ -1,4 +1,12 @@
-# 🎉 HeroOS - Complete Implementation Summary
+# HeroOS - Vibe Edition
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F2208prathamesh%2Fheroos-vibe-edition)
+
+> A web-based operating system interface with a premium, vibe-check aesthetic.
+
+## 🚀 Deployment Status
+- **Frontend**: [Vercel](https://vercel.com) (Pending)
+- **Backend**: [Render](https://render.com) (Pending)
 
 ## 📋 **Overview**
 
